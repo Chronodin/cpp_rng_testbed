@@ -1,0 +1,49 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+srand(time(0));
+int randMax = 260;
+int checkNum = rand() % + randMax;
+int rarityArray[5] {130, 180, 220, 258, 260};
+int whiteRarity = 90;
+int greenRarity = 150;
+int blueRarity = 200;
+int purpleRarity = 230;
+int legendary = 260;
+
+
+if (checkNum < whiteRarity) {
+cout << "no item has dropped. How sad." << "\n";
+
+
+} else if (whiteRarity <= checkNum, checkNum < greenRarity) {
+cout << "a white rarity item has dropped" << "\n";
+}
+
+
+else if (greenRarity <= checkNum, checkNum < blueRarity) {
+cout << "a green rarity item has dropped" << "\n";
+}
+
+
+else if (blueRarity <= checkNum, checkNum < purpleRarity) {
+cout << "a blue rarity item has dropped! Neat-o!" << "\n";
+
+}
+
+else if (purpleRarity <= checkNum, checkNum < legendary) { 
+ cout << "Oh shit! a purple rarity item has dropped!! That's badass!" << "\n";
+}
+  else if (checkNum == legendary) {
+cout << "LEGENDARY!!!!" << "\n";
+}
+
+
+
+ cout << checkNum <<" out of " << randMax <<"\n";
+ if (checkNum == 69) {
+ cout << "nnnnice."; }
+  return 0;
+
+}
