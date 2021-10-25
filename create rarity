@@ -1,0 +1,58 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    //declaring variables begins here
+    
+srand(time(0));
+int randMax = 260;
+int checkNum = rand() % + randMax;
+int rarityArray[5] {130, 180, 220, 258, 260};       // this array was intentionally made to lessen the amount of flat data int variables that were needed, but im not sure how 
+                                                    // to implement that exactly. I'm still new to c++ and coding in general so I know that its possible but Im just not sure how to implement it in the way that I should.
+                                                    // the idea is that I'd have arrays for rarity, weapon type, possible stat modifiers/ranges for each rarity, as well as a semi-randomized short descriptor of what the weapon looks like.
+                                                    // for example, you'd roll for a sword, it would be blue rarity, which would give it two modifiers (eg. +3 str and +1 wis) as well as a range of base stats for damage and hit chance
+                                                    // and then give the weapon a randomized descriptor in the format of header > body > tail. (eg. this <one handed sword> looks <almost translucent> and feels <weightless in your hand>.
+                                                    //  Holding it makes you feel <like you could take on the world>)
+int whiteRarity = 90;
+int greenRarity = 150;
+int blueRarity = 200;
+int purpleRarity = 230;
+int legendary = 260;
+
+//code starts here
+
+if (checkNum < whiteRarity) {
+cout << "no item has dropped. How sad." << "\n";
+
+
+} else if (whiteRarity <= checkNum, checkNum < greenRarity) {
+cout << "a white rarity item has dropped" << "\n";
+}
+
+
+else if (greenRarity <= checkNum, checkNum < blueRarity) {
+cout << "a green rarity item has dropped" << "\n";
+}
+
+
+else if (blueRarity <= checkNum, checkNum < purpleRarity) {
+cout << "a blue rarity item has dropped! Neat-o!" << "\n";
+
+}
+
+else if (purpleRarity <= checkNum, checkNum < legendary) { 
+ cout <<  "Oh shit! a purple rarity item has dropped!! That's badass!" << "\n";
+}
+  else if (checkNum == legendary) {
+cout << "LEGENDARY!!!!" << "\n";
+}
+
+
+
+ cout << checkNum <<" out of " << randMax <<"\n";
+ if (checkNum == 69) {
+ cout << "nnnnice."; }
+  return 0;
+
+}
